@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources | Elevate 4:14</title>
+  <meta name="description" content="Helpful Colorado resources for job seekers with disabilities and their families: Vocational Rehabilitation, Medicaid PASA providers and benefits planning.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="Elevate 4:14 | Elevating individuals through successful employment">
+  <meta property="og:description" content="Person-centered employment services for individuals with IDD, ages 16+, in Northern Colorado and Cheyenne, Wyoming.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Elevate 4:14 home">
+      <img src="assets/logo.svg" alt="Elevate 4:14" width="180" height="50">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Menu</span><span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="resources.html" aria-current="page">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Resources</p>
+      <h1>Helpful links for job seekers and families</h1>
+      <p class="lead">Colorado agencies, provider lists and guides we often point people to.</p>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap">
+      <div class="cards resource-cards">
+        <article class="card c-purple">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+          <h3>Colorado Division of Vocational Rehabilitation (DVR)</h3>
+          <p>The state agency that helps people with disabilities get and keep jobs. DVR can fund employment services and Pre-Employment Transition Services for students.</p>
+          <a class="text-link" href="https://dvr.colorado.gov" target="_blank" rel="noopener">Visit DVR &rarr;</a>
+        </article>
+        <article class="card c-green">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Program Approved Service Agencies (PASA)</h3>
+          <p>CDPHE's overview of PASAs, the agencies approved to provide Colorado Medicaid waiver services like supported employment.</p>
+          <a class="text-link" href="https://cdphe.colorado.gov/program-approved-service-agency-pasa" target="_blank" rel="noopener">Learn about PASAs &rarr;</a>
+        </article>
+        <article class="card c-orange">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <h3>Colorado PASA Provider List</h3>
+          <p>A spreadsheet of approved providers across the state, showing which services each one offers and how to contact them.</p>
+          <a class="text-link" href="https://docs.google.com/spreadsheets/d/1H6wku9Zgoxov_MoX7qD0RMu2glFYy3T4b5Z2-_JOmsg/edit?gid=459370783#gid=459370783" target="_blank" rel="noopener">Open the provider list &rarr;</a>
+        </article>
+        <article class="card c-purple">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17l5-5 4 4 7-7"/><path d="M15 9h5v5"/></svg></div>
+          <h3>Colorado Benefits Planning Guide</h3>
+          <p>Employment First Colorado's guide (revised June 2026) to how working affects SSI, SSDI, Medicaid and other benefits.</p>
+          <a class="text-link" href="https://employmentfirstcolorado.org/wp-content/uploads/2026/06/Revised-CO-Benefits-Planning-Guide-FINAL_June-2026.pdf" target="_blank" rel="noopener">Read the guide (PDF) &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <img src="assets/logo-white.svg" alt="Elevate 4:14" width="170" height="48">
+      <p class="tagline">Elevating individuals through successful employment</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="resources.html">Resources</a>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; <span id="yr">2026</span> Elevate 4:14 LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const t = document.querySelector('.nav-toggle'), n = document.getElementById('site-nav');
+  t.addEventListener('click', () => { const o = t.getAttribute('aria-expanded') === 'true'; t.setAttribute('aria-expanded', !o); n.classList.toggle('open', !o); });
+  n.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { t.setAttribute('aria-expanded', 'false'); n.classList.remove('open'); }));
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
